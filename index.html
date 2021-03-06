@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id="header">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Searcher</title>
+    <title>API Searcher Dictionary II</title>
     <script defer src="JS/scripts.js"></script>
+    <!-- //Código para que mi programa y firebase se entiendan, llamado CDN: Content Delivery Network -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script> -->
 </head>
 <body>
-    <div>
+    <div id=mainDiv>
         <h1>Diccionario Español</h1><br>
-        <label for="userRequest">Ingresa la palabra que desees:</label><br><br>
-        <input type="text" id="userRequest" placeholder="Escribe una palabra..."  name="userRequest">
-        <button id="searchButton">Buscar</button>
-        <input id="resetButton" type="reset" value="Limpiar">
+        <div id="requestDiv">
+            <label for="userRequest">Ingresa la palabra que desees:</label><br><br>
+            <input type="text" id="userRequest" placeholder="Escribe una palabra..."  name="userRequest">
+            <button id="searchButton">Buscar</button>
+            <input id="resetButton" type="reset" value="Limpiar">
+        </div>
     </div>
     <div id="searchResult"></div>
 </body>
